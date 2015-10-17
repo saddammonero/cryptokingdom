@@ -13,6 +13,8 @@ ISC, open source. See LICENSE file.
     
 ## or install via Github
     git clone https://github.com/saddammonero/cryptokingdom.git
+    cd cryptokingdom
+    npm install
     
 ## or download the latest zip
 *   [zip download][repo-zip]
