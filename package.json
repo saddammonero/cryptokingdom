@@ -1,0 +1,26 @@
+{
+  "name": "cryptokingdom",
+  "version": "1.0.0",
+  "description": "a node.js wrapper for cryptokingdom API",
+  "main": "lib/cryptokingdom",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saddammonero/cryptokingdom.git"
+  },
+  "keywords": [
+    "monero",
+    "cryptokingdom"
+  ],
+  "author": "HE The Prince of Ramsey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saddammonero/cryptokingdom/issues"
+  },
+  "homepage": "https://github.com/saddammonero/cryptokingdom#readme",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
+}
