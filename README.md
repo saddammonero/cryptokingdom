@@ -170,12 +170,39 @@ Example response:
     { status: 200,
       error: false,
       data: { result: '1 units of W1604 consumed.' } }
+      
+### create(item, amount, recipient, callback)
+Create an item to recipient. Senior admin only.
 
+    ck.create('BEER', 1, 7, function(err, response){
+        if(err){
+            console.log(err);
+        }
+        console.log(response);
+    });
+
+Example response:
     
+    { status: 200,
+      error: false,
+      data: { result: '1 units of beer created to saddam' } }
 
 
+### transfer(item, amount, transferFrom, transferTo, callback)
+Transfer an item from a character to another character. Senior admin only.
 
+    ck.transfer('BEER', 1, 7, 57, function(err, response){
+        if(err){
+            console.log(err);
+        }
+        console.log(response);
+    });
 
+Example response:
+    
+    { status: 200,
+      error: false,
+      data: { result: '1 units of BEER transferred to Riddick.' } }
 
 
 [cryptokingdom]: https://cryptokingdom.me
