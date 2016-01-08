@@ -1,30 +1,14 @@
 var CryptoKingdom = require('./lib/cryptokingdom'),
-    username = 'Riddick',
-    password = 'dO`j9n~TXr4P',
+    username = 'USERNAME',
+    password = 'PASSWORD',
     deviceID = '2', //an arbitrary number
     ck = new CryptoKingdom(username, password, deviceID);
 
-//example of get state for item
-//ck.create('MEAD', 1, 57, function(err, response){
-//    if(err){
-//        console.log(err);
-//    }
-//    console.log(response.data);
-//});
-
-ck.itemOwnership(function(err, data){
+ck.consume('can', 1, 'test', function(err, res) {
     if(err){
         console.log(err);
     } else {
-        console.log(data);
+        console.log(res);
     }
 });
-
-//ck.consume('can', 1, 'test', function(err, res) {
-//    if(err){
-//        console.log(err);
-//    } else {
-//        console.log(res);
-//    }
-//});
 
