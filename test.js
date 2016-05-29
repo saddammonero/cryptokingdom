@@ -1,7 +1,8 @@
+'use strict';
 var CryptoKingdom = require('./lib/cryptokingdom'),
     username = 'username',
-    password = 'PASSWORD',
-    deviceID = 'test', //an arbitrary id
+    password = 'password',
+    deviceID = 'test-api', //an arbitrary id
     ck = new CryptoKingdom(username, password, deviceID);
 
 //ck.consume('can', 1, 'test', function(err, res) {
@@ -15,9 +16,15 @@ var CryptoKingdom = require('./lib/cryptokingdom'),
 //ck.getToken(ck, function(err, token){
 //    console.log(token);
 //});
+// ck.getToken(ck, function(err, token) {
+//     console.log(token);
+// })
 
-ck.itemOwnership(token, item, function(err, data){
+// ck.owns(token, item, function(err, data) {
+//     console.log(data);
+// })
+
+ck.give(token, 'CAN', 1, {name: 'Riddick', note: 'yum'}, function(err, data){
     console.log(data);
-});
-
+})
 
