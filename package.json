@@ -1,6 +1,6 @@
 {
   "name": "cryptokingdom",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "a node.js wrapper for cryptokingdom API",
   "main": "lib/cryptokingdom",
   "scripts": {
